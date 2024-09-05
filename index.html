@@ -19,6 +19,7 @@
             height: 100vh;
             animation: fadeIn 2s ease-in-out;
             text-align: center;
+            padding: 20px;
         }
 
         @keyframes fadeIn {
@@ -114,6 +115,56 @@
         p {
             font-size: 1.1em;
             line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            img {
+                width: 120px;
+                height: 120px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
