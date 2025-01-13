@@ -3,190 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thamer Almutairi</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+    <title>Thamer Al-mutairi</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #0a0f0f;
-            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            animation: fadeIn 2s ease-in-out;
-            text-align: center;
-            padding: 20px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            padding: 0;
+            background: #0f0f0f;
+            color: #fff;
         }
 
         .container {
-            background-color: #1c1f1f;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
-            max-width: 600px;
-            width: 100%;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
         }
 
-        .container:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 0 30px rgba(0, 255, 0, 0.7);
-        }
-
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 3px solid #00ff00;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        img:hover {
-            transform: scale(1.1) rotate(10deg);
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+        header {
+            padding: 4rem 2rem;
+            background: #151515;
         }
 
         h1 {
-            font-size: 2.5em;
-            margin: 20px 0;
-            font-family: 'Source Code Pro', monospace;
-            color: #00ff00;
-            transition: color 0.3s ease, transform 0.3s ease;
+            font-size: 2rem;
+            margin: 0;
         }
 
-        h1:hover {
-            color: #ffffff;
-            transform: translateY(-5px);
-        }
-
-        .links {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .links a {
-            text-decoration: none;
-            color: #00ff00;
-            font-size: 1.2em;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-
-        .links a:hover {
-            color: #ffffff;
-            transform: translateY(-5px);
+        .subtitle {
+            color: #888;
+            margin-top: 0.5rem;
         }
 
         section {
-            background-color: #2a2a2a;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            margin: 20px 0;
-            width: 100%;
-            max-width: 600px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0, 255, 0, 0.7);
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #151515;
+            border-radius: 4px;
         }
 
         h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #00ff00;
-            border-bottom: 2px solid #00ff00;
-            padding-bottom: 10px;
+            margin-top: 0;
+            color: #fff;
+            font-size: 1.25rem;
         }
 
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
         }
 
-        @media (max-width: 768px) {
+        .tag {
+            background: #222;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .cert {
+            display: inline-block;
+            background: #222;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 600px) {
             .container {
-                padding: 30px;
+                padding: 1rem;
             }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            img {
-                width: 120px;
-                height: 120px;
-            }
-
-            h2 {
-                font-size: 1.8em;
-            }
-
-            p {
-                font-size: 1em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
-
-            .container {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 1.8em;
-            }
-
-            img {
-                width: 100px;
-                height: 100px;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            p {
-                font-size: 0.9em;
+            
+            header {
+                padding: 2rem 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="./c3abb5efdef9e749f5b4eb637e7b8f62.jpeg" alt="Thamer ALmutairi">
-        <h1>root@thamer-almutairi</h1>
-        <div class="links">
-            <a href="https://x.com/0xTh4m3r" aria-label="Twitter">
-                <i class="bi bi-twitter"></i>
-              </a>
-            <a href="https://tiktok.com/@thamerus" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-            <a href="https://instagram.com/thameruss" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    <header>
+        <div class="container">
+            <h1>Thamer Al-mutairi</h1>
+            <div class="subtitle">Security Researcher</div>
         </div>
-    </div>
+    </header>
 
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>
-            I’m Thamer Al-mutairi, a 16-year-old with a deep interest in penetration testing, red teaming, and cybersecurity.
-            Currently, I’m working towards my eCPPTv3 certification ..
-        </p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>About</h2>
+            <p>16-year-old cybersecurity enthusiast focused on information security research and implementation of security concepts.</p>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="cert">eJPT</div>
+            <p>Currently pursuing: CPTS (Certified Penetration Testing Specialist)</p>
+        </section>
+
+        <section>
+            <h2>Areas of Interest</h2>
+            <div class="tags">
+                <span class="tag">Penetration Testing</span>
+                <span class="tag">Red Teaming</span>
+                <span class="tag">Web Exploitation</span>
+                <span class="tag">Malware Development</span>
+                <span class="tag">Digital Forensics</span>
+                <span class="tag">Cybersecurity</span>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
