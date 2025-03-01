@@ -30,14 +30,15 @@
         <section class="hero">
             <div>
                 <h1>Hi, I'm <span>Thamer Almutairi</span></h1>
-                <p class="hero-subtitle">I break things so others can't.</p>
+                <p class="hero-subtitle">I break things so others can't (: </p>
                 <div class="animated-text">
                     <div class="animated-text-content">
                         <span>Penetration Tester</span>
                         <span>Red Teamer</span>
-                        <span>Web Developer</span>
-                        <span>Ethical Hacker</span>
                         <span>Cybersecurity Specialist</span>
+                        <span>Ethical Hacker</span>
+                        <span>Developer</span>
+
                     </div>
                 </div>
                 <div class="terminal-window">
@@ -48,28 +49,28 @@
                     </div>
                     <div class="terminal-content">
                         <div class="terminal-line">
-                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-prompt">#</span>
                             <span class="terminal-command">whoami</span>
                         </div>
                         <div class="terminal-line">
-                            <span class="terminal-command">thamer@cybersecurity</span>
+                            <span class="terminal-command">root@thamer</span>
                         </div>
                         <div class="terminal-line">
-                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-prompt">#</span>
                             <span class="terminal-command">skills --list</span>
                         </div>
                         <div class="terminal-line">
                             <span class="terminal-command">['penetration testing', 'web exploitation', 'malware development', 'red teaming']</span>
                         </div>
                         <div class="terminal-line">
-                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-prompt">#</span>
                             <span class="terminal-command">location</span>
                         </div>
                         <div class="terminal-line">
                             <span class="terminal-command">Kuwait</span>
                         </div>
                         <div class="terminal-line">
-                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-prompt">#</span>
                             <span class="terminal-command typing-animation">Let's connect...</span>
                         </div>
                     </div>
@@ -82,16 +83,16 @@
             <h2 class="section-title"><span>0x01.</span> About Me</h2>
             <div class="about-content">
                 <div class="about-description">
-                    <p>Hey! I’m Thamer, a 16-year-old cybersecurity enthusiast from Kuwait. I’m into ethical hacking, red teaming, and secure development.</p>
-                    <p>I’m self-taught and always learning more about cybersecurity through hands-on experience, certifications, and constant practice. My goal is to help organizations improve their security by finding weaknesses before the bad guys do <: </p>
+                    <p>Hey, I’m Thamer, a 16-year-old cybersecurity enthusiast from Kuwait 🇰🇼 </p> <p></p> I'm into ethical hacking and red teaming , I like challenges and finding smart ways to bypass security</p>
+                    <p>I'm self-taught and always learning more about cybersecurity through hands-on experience, certifications, and constant practice , My goal is to help organizations strengthen their security by finding weaknesses before attackers do </p>
                     <p>Here are some technologies and skills I've been working with:</p>
                     <ul class="skills-list">
                         <li>Penetration Testing</li>
                         <li>Red teaming</li>
                         <li> Web Pentesting</li>
                         <li>Network Security</li>
-                        <li>Low-Level Coding</li>
-                        <li>Malware Development</li>
+                        <li>Low-Level Development</li>
+                        <li>Malware Dev</li>
                         <li>Advanced Phishing</li>
                         <li>Web Development</li>
                         
@@ -112,7 +113,7 @@
                 <div class="certification-card">
                     <div class="cert-title">eJPT - eLearnSecurity Junior Penetration Tester</div>
                     <div class="cert-issuer">INE (eLearnSecurity)</div>
-                    <p class="cert-description">Validated practical skills in information security, penetration testing, and web application security assessment.</p>
+                    <p class="cert-description">Hands-on skills in info security, penetration testing, and web app security</p>
                     <div class="cert-actions">
                         <a href="https://certs.ine.com/embed/df15ea97-e878-4add-b3e2-f3278a53c611" class="cert-link" target="_blank">View Certificate</a>
                     </div>
@@ -120,7 +121,7 @@
                 <div class="certification-card">
                     <div class="cert-title">CPTS - Certified Penetration Testing Specialist</div>
                     <div class="cert-issuer">Hack The Box</div>
-                    <p class="cert-description">Currently pursuing. This advanced certification validates comprehensive penetration testing skills in real-world environments.</p>
+                    <p class="cert-description">Currently working on it , This advanced cert shows strong penetration testing skills in real-world environments</p>
                     <div class="cert-date">In Progress ⏳</div>
                 </div>
             </div>
@@ -202,7 +203,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded',function(){
-            // Dynamic background with canvas and particles
             const canvas=document.getElementById('bg-canvas');
             const ctx=canvas.getContext('2d');
             canvas.width=window.innerWidth;
@@ -275,7 +275,6 @@
             
             animateParticles();
             
-            // Mobile menu toggle
             const menuToggle = document.querySelector('.menu-toggle');
             const navLinks = document.querySelector('.nav-links');
             
@@ -284,7 +283,6 @@
                 navLinks.classList.toggle('active');
             });
             
-            // Close mobile menu when clicking a nav link
             const navLinksArray = document.querySelectorAll('.nav-link');
             navLinksArray.forEach(link => {
                 link.addEventListener('click', function() {
@@ -293,7 +291,6 @@
                 });
             });
             
-            // Smooth scrolling for nav links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -308,7 +305,7 @@
                 });
             });
             
-            // Scroll animations for sections
+            
             const revealElements = document.querySelectorAll('section:not(.hero)');
             
             function checkReveal() {
@@ -323,22 +320,18 @@
                 });
             }
             
-            // Initialize section animations
+          
             revealElements.forEach(section => {
                 section.style.opacity = '0';
                 section.style.transform = 'translateY(20px)';
                 section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             });
             
-            // Check for elements in view on scroll
+          
             window.addEventListener('scroll', checkReveal);
-            checkReveal(); // Check initial state
+            checkReveal();
         });
-        document.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        window.open(link.href, '_blank');
-    });
-});
+       
 
     </script>
 </body>
