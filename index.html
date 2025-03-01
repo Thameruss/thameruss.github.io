@@ -3,304 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thamer Al-mutairi</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            background: #0f0f0f;
-            color: #fff;
-            font-size: 16px;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
-
-        header {
-            padding: 2rem 1rem;
-            background: #151515;
-            text-align: center;
-        }
-
-        @media (min-width: 768px) {
-            header {
-                padding: 4rem 2rem;
-            }
-        }
-
-        h1 {
-            font-size: clamp(1.8rem, 5vw, 2.5rem);
-            margin: 0;
-        }
-
-        .subtitle {
-            color: #888;
-            margin-top: 0.5rem;
-            font-size: clamp(1rem, 3vw, 1.2rem);
-        }
-
-        section {
-            margin: 1.5rem 0;
-            padding: 1.25rem;
-            background: #151515;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (min-width: 768px) {
-            section {
-                margin: 2rem 0;
-                padding: 1.5rem;
-            }
-        }
-
-        h2 {
-            margin-top: 0;
-            color: #fff;
-            font-size: clamp(1.2rem, 4vw, 1.4rem);
-            border-bottom: 2px solid #222;
-            padding-bottom: 0.5rem;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .tag {
-            background: #222;
-            padding: 0.5rem 0.75rem;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            white-space: nowrap;
-        }
-
-        .social-links {
-            display: grid;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        @media (min-width: 768px) {
-            .social-links {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        .social-link {
-            display: flex;
-            align-items: center;
-            padding: 0.75rem 1rem;
-            background: #222;
-            border-radius: 8px;
-            text-decoration: none;
-            color: #fff;
-            transition: all 0.3s ease;
-            border: 1px solid #333;
-        }
-
-        .social-link svg {
-            width: 24px;
-            height: 24px;
-            margin-right: 12px;
-            flex-shrink: 0;
-        }
-
-        .social-link span {
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        @media (hover: hover) {
-            .social-link:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            }
-
-            .social-link.tiktok:hover {
-                background: linear-gradient(45deg, #00f2ea, #ff0050);
-            }
-
-            .social-link.instagram:hover {
-                background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-            }
-
-            .social-link.twitter:hover {
-                background: #1DA1F2;
-            }
-
-            .social-link.discord:hover {
-                background: #5865F2;
-            }
-        }
-
-        iframe {
-            max-width: 100%;
-            border: none;
-        }
-
-        .tryhackme-section {
-            width: 100%;
-            background: #222;
-            border-radius: 8px;
-            padding: 0.5rem;
-            margin-top: 1rem;
-            overflow: hidden;
-        }
-
-        @media (min-width: 768px) {
-            .tryhackme-section {
-                grid-column: span 2;
-            }
-        }
-
-        .certification-frame {
-            width: 100%;
-            height: 400px;
-        }
-
-        @media (min-width: 768px) {
-            .certification-frame {
-                height: 600px;
-            }
-        }
-
-        .animated-text {
-            color: #888;
-            margin-top: 0.5rem;
-            font-size: clamp(1rem, 3vw, 1.2rem);
-            height: 1.5em;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .animated-text-content {
-            display: flex;
-            flex-direction: column;
-            animation: slide 12s cubic-bezier(0.23, 1, 0.32, 1) infinite;
-        }
-
-        .animated-text span {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 1.5em;
-            padding: 0.2em 0;
-        }
-
-        @keyframes slide {
-            0%, 10% {
-                transform: translateY(0);
-            }
-            25%, 35% {
-                transform: translateY(-1.5em);
-            }
-            50%, 60% {
-                transform: translateY(-3em);
-            }
-            75%, 80% {
-                transform: translateY(-4.5em);
-            }
-            100% {
-                transform: translateY(-6em);
-            }
-        }
-
-        
-    </style>
+    <title>Thamer Almutairi | Cybersecurity Specialist</title>
+    <style>:root{--primary:#0a192f;--secondary:#112240;--accent:#64ffda;--text:#e6f1ff;--text-secondary:#8892b0;--danger:#ff5555}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'SF Pro Display',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;background-color:var(--primary);color:var(--text);font-size:16px;overflow-x:hidden}#bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1}.container{width:90%;max-width:1200px;margin:0 auto;padding:1rem}nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;position:fixed;width:100%;top:0;left:0;z-index:1000;background:rgba(10,25,47,0.85);backdrop-filter:blur(10px);transition:all .3s ease}.nav-container{width:90%;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}.logo{font-weight:700;font-size:1.75rem;color:var(--accent);text-decoration:none;transition:color .3s ease, transform .3s ease}.logo:hover{color:var(--text);transform:scale(1.05)}.nav-links{display:flex;gap:2.5rem}.nav-link{color:var(--text);text-decoration:none;font-weight:500;position:relative;padding:.5rem 0;transition:color .3s ease}.nav-link::after{content:'';position:absolute;width:0;height:2px;bottom:-4px;left:0;background-color:var(--accent);transition:width .3s ease}.nav-link:hover{color:var(--accent)}.nav-link:hover::after{width:100%}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:30px;height:21px;cursor:pointer}.menu-toggle span{display:block;height:3px;width:100%;background-color:var(--accent);border-radius:3px;transition:all .3s ease}html{scroll-behavior:smooth}.hero{height:100vh;display:flex;flex-direction:column;justify-content:center}.hero h1{font-size:clamp(2.5rem,8vw,5rem);font-weight:700;margin-bottom:1rem;line-height:1.1}.hero h1 span{color:var(--accent)}.hero-subtitle{font-size:clamp(1rem,3vw,1.5rem);color:var(--text-secondary);margin-bottom:1.5rem}.animated-text{color:var(--accent);font-size:clamp(1rem,3vw,1.5rem);height:1.5em;overflow:hidden;margin-bottom:2rem}.animated-text-content{display:flex;flex-direction:column;animation:slide 10s cubic-bezier(0.23,1,0.32,1) infinite}.animated-text span{display:flex;height:1.5em;padding:.2em 0}@keyframes slide{0%,16%{transform:translateY(0)}20%,36%{transform:translateY(-1.5em)}40%,56%{transform:translateY(-3em)}60%,76%{transform:translateY(-4.5em)}80%,96%{transform:translateY(-6em)}100%{transform:translateY(0)}}.cta-button{display:inline-block;background:transparent;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:1rem 2rem;font-size:1rem;font-weight:500;text-decoration:none;transition:all .3s ease;margin-top:1rem;position:relative;overflow:hidden;z-index:1}.cta-button::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:rgba(100,255,218,0.1);transition:all .4s ease;z-index:-1}.cta-button:hover{transform:translateY(-3px);box-shadow:0 4px 10px rgba(100,255,218,0.2)}.cta-button:hover::before{left:0}section{margin:8rem 0;position:relative}.section-title{display:flex;align-items:center;margin-bottom:3rem;font-size:clamp(1.5rem,5vw,2rem);font-weight:700;color:var(--text)}.section-title::after{content:'';display:block;height:1px;width:300px;background-color:var(--secondary);margin-left:1rem}.section-title span{color:var(--accent);margin-right:1rem}.about-content{display:grid;grid-template-columns:3fr 2fr;gap:3rem}.about-description{color:var(--text-secondary)}.about-description p{margin-bottom:1rem}.skills-list{display:grid;grid-template-columns:repeat(2,minmax(140px,200px));gap:.5rem;padding:0;margin:1.5rem 0;list-style:none}.skills-list li{position:relative;padding-left:1.5rem;color:var(--text-secondary)}.skills-list li::before{content:'▹';position:absolute;left:0;color:var(--accent)}.headshot-container{position:relative;max-width:300px;margin:0 auto}.headshot-wrapper{position:relative;border-radius:10px;overflow:hidden}.headshot-wrapper::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:var(--accent);mix-blend-mode:screen;border-radius:10px;z-index:1;transition:all .3s ease}.headshot-wrapper:hover::before{background-color:transparent}.headshot-img{width:100%;height:auto;filter:grayscale(100%) contrast(1.2);transition:all .3s ease;display:block}.headshot-wrapper:hover .headshot-img{filter:none}.headshot-border{position:absolute;top:15px;left:15px;width:100%;height:100%;border:2px solid var(--accent);border-radius:10px;z-index:-1;transition:all .3s ease}.headshot-container:hover .headshot-border{transform:translate(-5px,-5px)}.certifications-grid{display:grid;grid-template-columns:1fr;gap:2rem}.certification-card{background:var(--secondary);border-radius:8px;padding:2rem;transition:transform .3s ease,box-shadow .3s ease;position:relative;overflow:hidden}.certification-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px -15px rgba(0,0,0,0.7)}.certification-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--accent)}.cert-title{font-size:1.2rem;font-weight:700;margin-bottom:.5rem}.cert-issuer{font-size:.9rem;color:var(--accent);margin-bottom:1rem}.cert-date{font-size:.8rem;color:var(--text-secondary)}.cert-actions{margin-top:1.5rem;display:flex;gap:1rem}.cert-link{color:var(--text);background:var(--primary);padding:.5rem 1rem;border-radius:4px;text-decoration:none;font-size:.9rem;transition:all .3s ease}.cert-link:hover{background:rgba(100,255,218,0.1);color:var(--accent)}.interests-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}.interest-card{background:var(--secondary);border-radius:8px;padding:1.5rem;transition:transform .3s ease,box-shadow .3s ease;height:100%}.interest-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.2)}.interest-icon{font-size:2rem;color:var(--accent);margin-bottom:1rem}.interest-title{font-size:1.2rem;font-weight:600;margin-bottom:.5rem}.interest-description{color:var(--text-secondary);font-size:.95rem}.connect-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2rem}.social-card{background:var(--secondary);border-radius:10px;overflow:hidden;transition:all .3s ease;transform-style:preserve-3d;perspective:1000px}.social-card:hover{transform:translateY(-10px) rotateY(5deg);box-shadow:0 15px 30px rgba(0,0,0,0.3)}.social-link{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-decoration:none;color:var(--text);height:100%;position:relative;z-index:1;overflow:hidden}.social-link::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(45deg,rgba(100,255,218,0.1),transparent);opacity:0;transition:opacity .3s ease;z-index:-1}.social-link:hover::before{opacity:1}.social-icon{width:40px;height:40px;margin-bottom:1rem;color:var(--accent);transition:transform .3s ease}.social-link:hover .social-icon{transform:scale(1.2) rotate(5deg)}.social-name{font-weight:600;font-size:1.1rem;margin-bottom:.5rem;transition:color .3s ease}.social-link:hover .social-name{color:var(--accent)}.social-username{color:var(--text-secondary);font-size:.9rem;transition:color .3s ease}.social-link:hover .social-username{color:var(--text)}footer{padding:3rem 0;text-align:center;color:var(--text-secondary)}.footer-text{font-size:.9rem;margin-bottom:1rem}.back-to-top{display:inline-flex;justify-content:center;align-items:center;width:40px;height:40px;background:var(--secondary);color:var(--accent);border-radius:50%;text-decoration:none;margin-top:1rem;transition:all .3s ease}.back-to-top:hover{background:var(--accent);color:var(--primary);transform:translateY(-5px)}.terminal-window{margin-top:2rem;background:#0c1021;border-radius:6px;padding:1rem;box-shadow:0 10px 30px -15px rgba(0,0,0,0.7);width:100%;max-width:600px}.terminal-header{display:flex;margin-bottom:1rem}.terminal-button{width:12px;height:12px;border-radius:50%;margin-right:8px}.terminal-button.red{background:#ff5f56}.terminal-button.yellow{background:#ffbd2e}.terminal-button.green{background:#27c93f}.terminal-content{font-family:'SF Mono','Fira Code',monospace;color:#8892b0;line-height:1.5}.terminal-line{display:flex;margin-bottom:.5rem}.terminal-prompt{color:var(--accent);margin-right:.5rem}.terminal-command{color:var(--text)}.blinking-cursor{animation:blink 1s step-end infinite}.typing-animation{white-space:nowrap;overflow:hidden;border-right:3px solid var(--accent);animation:typing 3.5s steps(40,end),blink-caret .75s step-end infinite}@keyframes typing{from{width:0}to{width:100%}}@keyframes blink-caret{from,to{border-color:transparent}50%{border-color:var(--accent)}}@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}.placeholder-img{width:100%;height:300px;background-color:#2a3956;border-radius:10px;position:relative;overflow:hidden}.placeholder-img::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(to right,transparent,rgba(255,255,255,0.1),transparent);animation:shimmer 1.5s infinite}@keyframes shimmer{100%{left:100%}}@media (max-width:768px){.nav-links{position:fixed;top:0;right:-100%;width:70%;height:100vh;flex-direction:column;justify-content:center;align-items:center;background:var(--secondary);transition:right .3s ease;z-index:999}.nav-links.active{right:0}.nav-link{margin:1rem 0;font-size:1.2rem}.menu-toggle{display:flex;z-index:1000}.menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,6px)}.menu-toggle.active span:nth-child(2){opacity:0}.menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-6px)}.about-content{grid-template-columns:1fr}.headshot-container{margin:2rem auto}.section-title::after{width:100px}}@media (max-width:480px){.hero h1{font-size:2.5rem}.certifications-grid,.interests-grid,.connect-grid{grid-template-columns:1fr}.terminal-window{max-width:100%}.social-link{padding:1.5rem}.social-icon{width:30px;height:30px}}</style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Thamer Almutairi</h1>
-            <div class="animated-text">
-                <div class="animated-text-content">
-                    <span>Penetration Tester</span>
-                    <span>Red Teamer</span>
-                    <span>Web Developer</span>
-                    <span>Ethical Hacker</span>
-                    <span>Penetration Tester</span> 
-                </div>
-            </div>
-        </div>
-    </header>
+    <canvas id="bg-canvas"></canvas>
     <div class="container">
-        <section>
-            <h2>About</h2>
-            <p>A passionate self-taught developer from Kuwait, 16 years old, specializing in ethical hacking, red teaming, and malware development</p>
-        </section>
-
-        <section>
-            <h2>Certifications</h2>
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="logo">T.A.M</a>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                    <a href="#interests" class="nav-link">Interests</a>
+                    <a href="#connect" class="nav-link">Connect</a>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="hero">
             <div>
-                <iframe
-                    class="certification-frame"
-                    src="https://certs.ine.com/embed/df15ea97-e878-4add-b3e2-f3278a53c611">
-                </iframe>
+                <h1>Hi, I'm <span>Thamer Almutairi</span></h1>
+                <p class="hero-subtitle">I break things so others can't.</p>
+                <div class="animated-text">
+                    <div class="animated-text-content">
+                        <span>Penetration Tester</span>
+                        <span>Red Teamer</span>
+                        <span>Web Developer</span>
+                        <span>Ethical Hacker</span>
+                        <span>Cybersecurity Specialist</span>
+                    </div>
+                </div>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-button red"></div>
+                        <div class="terminal-button yellow"></div>
+                        <div class="terminal-button green"></div>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">whoami</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-command">thamer@cybersecurity</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">skills --list</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-command">['penetration testing', 'web exploitation', 'malware development', 'red teaming']</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">location</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-command">Kuwait</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command typing-animation">Let's connect...</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#connect" class="cta-button">Get In Touch</a>
             </div>
-            <p>Currently pursuing: CPTS (Certified Penetration Testing Specialist)</p>
         </section>
-
-        <section>
-            <h2>Areas of Interest</h2>
-            <div class="tags">
-                <span class="tag">Penetration Testing</span>
-                <span class="tag">Red Teaming</span>
-                <span class="tag">Web Exploitation</span>
-                <span class="tag">Malware Development</span>
-                <span class="tag">Cybersecurity</span>
-            </div>
-        </section>
-
-        <section class="social-section">
-            <h2>My accounts <: </h2>
-            <div class="social-links">
-                <a href="https://tiktok.com/@itkilh" target="_blank" class="social-link tiktok">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                    </svg>
-                    <span>TikTok</span>
-                </a>
-                <a href="https://instagram.com/thameruss" target="_blank" class="social-link instagram">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://x.com/sliusx" target="_blank" class="social-link twitter">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                    <span>X (Twitter)</span>
-                </a>
-                <a href="https://discord.gg/V7FFgvEsyF" target="_blank" class="social-link discord">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                    </svg>
-                    <span>Join Discord</span>
-                </a>
-                <div class="tryhackme-section">
-                    <iframe 
-                        src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2875010" 
-                        width="345" 
-                        height="90">
-                    </iframe>
+        
+        <section id="about">
+            <h2 class="section-title"><span>0x01.</span> About Me</h2>
+            <div class="about-content">
+                <div class="about-description">
+                    <p>Hey! I’m Thamer, a 16-year-old cybersecurity enthusiast from Kuwait. I’m into ethical hacking, red teaming, and secure development.</p>
+                    <p>I’m self-taught and always learning more about cybersecurity through hands-on experience, certifications, and constant practice. My goal is to help organizations improve their security by finding weaknesses before the bad guys do <: </p>
+                    <p>Here are some technologies and skills I've been working with:</p>
+                    <ul class="skills-list">
+                        <li>Penetration Testing</li>
+                        <li>Red teaming</li>
+                        <li> Web Pentesting</li>
+                        <li>Network Security</li>
+                        <li>Low-Level Coding</li>
+                        <li>Malware Development</li>
+                        <li>Advanced Phishing</li>
+                        <li>Web Development</li>
+                        
+                    </ul>
+                </div>
+                <div class="headshot-container">
+                    <div class="headshot-wrapper">
+                        <div class="placeholder-img"></div>
+                    </div>
+                    <div class="headshot-border"></div>
                 </div>
             </div>
         </section>
+        
+        <section id="certifications">
+            <h2 class="section-title"><span>0x02.</span> Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-title">eJPT - eLearnSecurity Junior Penetration Tester</div>
+                    <div class="cert-issuer">INE (eLearnSecurity)</div>
+                    <p class="cert-description">Validated practical skills in information security, penetration testing, and web application security assessment.</p>
+                    <div class="cert-actions">
+                        <a href="https://certs.ine.com/embed/df15ea97-e878-4add-b3e2-f3278a53c611" class="cert-link" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-title">CPTS - Certified Penetration Testing Specialist</div>
+                    <div class="cert-issuer">Hack The Box</div>
+                    <p class="cert-description">Currently pursuing. This advanced certification validates comprehensive penetration testing skills in real-world environments.</p>
+                    <div class="cert-date">In Progress ⏳</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="interests">
+            <h2 class="section-title"><span>0x03.</span> Areas of Interest</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">🔐</div>
+                    <h3 class="interest-title">Penetration Testing</h3>
+                    <p class="interest-description">Finding and exploiting weaknesses in systems, networks, and apps to help improve security</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🎯</div>
+                    <h3 class="interest-title">Red Teaming</h3>
+                    <p class="interest-description">Simulating real-world cyberattacks to test how well an organization can detect and respond to threats</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🌐</div>
+                    <h3 class="interest-title">Web Exploitation</h3>
+                    <p class="interest-description">Finding and exploiting vulnerabilities in web apps, like XSS, SQL injection, CSRF, and other common security issues (OWASP Top 10)</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">👾</div>
+                    <h3 class="interest-title">Malware Development</h3>
+                    <p class="interest-description">Creating malware to understand attack methods and develop ways to bypass defenses</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="connect">
+            <h2 class="section-title"><span>0x04.</span> Let's Connect</h2>
+            <div class="connect-grid">
+                <div class="social-card">
+                    <a href="https://tiktok.com/@itkilh" target="_blank" class="social-link">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                        </svg>
+                        <span class="social-name">TikTok</span>
+                        <span class="social-username">@itkilh</span>
+                    </a>
+                </div>
+                <div class="social-card">
+                    <a href="https://instagram.com/0x54414d" target="_blank" class="social-link">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        <span class="social-name">Instagram</span>
+                        <span class="social-username">0x54414d</span>
+                    </a>
+                </div>
+                <div class="social-card">
+                    <a href="https://x.com/sliusx" target="_blank" class="social-link">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        <span class="social-name">X (Twitter)</span>
+                        <span class="social-username">@sliusx</span>
+                    </a>
+                </div>
+                <div class="social-card">
+                    <a href="https://discord.gg/cHeZkf3QzS" target="_blank" class="social-link">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.786 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                        <span class="social-name">Discord</span>
+                        <span class="social-username">Join My Server</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p class="footer-text">© 2025 Thamer Almutairi. All rights reserved.</p>
+            <a href="#" class="back-to-top">↑</a>
+        </footer>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            // Dynamic background with canvas and particles
+            const canvas=document.getElementById('bg-canvas');
+            const ctx=canvas.getContext('2d');
+            canvas.width=window.innerWidth;
+            canvas.height=window.innerHeight;
+            
+            window.addEventListener('resize',function(){
+                canvas.width=window.innerWidth;
+                canvas.height=window.innerHeight;
+            });
+            
+            const particles=[];
+            const particleCount=100;
+            
+            for(let i=0;i<particleCount;i++){
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 2 + 1,
+                    color: 'rgba(100, 255, 218, ' + (Math.random() * 0.5 + 0.1) + ')',
+                    velocity: {
+                        x: (Math.random() - 0.5) * 0.5,
+                        y: (Math.random() - 0.5) * 0.5
+                    }
+                });
+            }
+            
+            function connectParticles() {
+                for(let i = 0; i < particles.length; i++) {
+                    for(let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if(distance < 120) {
+                            ctx.beginPath();
+                            ctx.strokeStyle = 'rgba(100, 255, 218, ' + (1 - distance / 120) * 0.2 + ')';
+                            ctx.lineWidth = 1;
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+            
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                for(let i = 0; i < particles.length; i++) {
+                    particles[i].x += particles[i].velocity.x;
+                    particles[i].y += particles[i].velocity.y;
+                    
+                    if(particles[i].x < 0 || particles[i].x > canvas.width) {
+                        particles[i].velocity.x = -particles[i].velocity.x;
+                    }
+                    
+                    if(particles[i].y < 0 || particles[i].y > canvas.height) {
+                        particles[i].velocity.y = -particles[i].velocity.y;
+                    }
+                    
+                    ctx.beginPath();
+                    ctx.arc(particles[i].x, particles[i].y, particles[i].radius, 0, Math.PI * 2);
+                    ctx.fillStyle = particles[i].color;
+                    ctx.fill();
+                }
+                
+                connectParticles();
+                requestAnimationFrame(animateParticles);
+            }
+            
+            animateParticles();
+            
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            
+            // Close mobile menu when clicking a nav link
+            const navLinksArray = document.querySelectorAll('.nav-link');
+            navLinksArray.forEach(link => {
+                link.addEventListener('click', function() {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+            
+            // Smooth scrolling for nav links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Scroll animations for sections
+            const revealElements = document.querySelectorAll('section:not(.hero)');
+            
+            function checkReveal() {
+                const triggerBottom = window.innerHeight * 0.8;
+                
+                revealElements.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    if(sectionTop < triggerBottom) {
+                        section.style.opacity = '1';
+                        section.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+            
+            // Initialize section animations
+            revealElements.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+            
+            // Check for elements in view on scroll
+            window.addEventListener('scroll', checkReveal);
+            checkReveal(); // Check initial state
+        });
+    </script>
 </body>
 </html>
-</antArtif
