@@ -105,16 +105,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add scroll reveal animations
-    ScrollReveal().reveal('.hero-content', {
-        delay: 200,
-        distance: '20px',
-        origin: 'bottom'
-    });
-    
-    ScrollReveal().reveal('.about-content, .skills-container', {
-        delay: 200,
-        distance: '20px',
-        origin: 'bottom',
-        interval: 100
-    });
+    // Initialize ScrollReveal safely
+    if (typeof ScrollReveal === 'function') {
+        const sr = ScrollReveal({
+            reset: false,
+            distance: '20px',
+            duration: 800,
+            delay: 200
+        });
+
+        sr.reveal('.hero-content', {
+            origin: 'bottom'
+        });
+
+        sr.reveal('.about-content, .skills-container', {
+            origin: 'bottom',
+            interval: 100
+        });
+    }
 });
+
+// Initialize particles.js safely
+if (typeof particlesJS === 'function') {
+    particlesJS("particles-js", {
+        // ... your existing particles config ...
+    });
+}
+
+window.addEventListener('error', function(e) {
+    if (e.target.src) {
+        console.warn('Failed to load script:', e.target.src);
+        // Remove any loading states if present
+        document.body.classList.remove('loading');
+    }
+}, true);
