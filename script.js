@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { text: '<span class="cursor"></span>', delay: 500 }
     ];
     
-    // Function to animate typing
+    // Function to animate typin
     async function typeTerminal() {
         terminalText.innerHTML = '';
         
