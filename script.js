@@ -118,19 +118,62 @@ document.addEventListener('DOMContentLoaded', function() {
             origin: 'bottom'
         });
 
-        sr.reveal('.about-content, .skills-container', {
+        sr.reveal('.about-content, .skills-container, .achievements-container', {
             origin: 'bottom',
             interval: 100
         });
     }
+    
+    // Initialize particles.js with optimized settings
+    if (typeof particlesJS === 'function') {
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 40, density: { enable: true, value_area: 800 } },
+                color: { value: "#ff3e3e" },
+                shape: { type: "circle" },
+                opacity: {
+                    value: 0.4,
+                    random: true,
+                    animation: { enable: true, speed: 0.5, minimumValue: 0.1, sync: false }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    animation: { enable: true, speed: 1, minimumValue: 0.1, sync: false }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ff3e3e",
+                    opacity: 0.2,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                },
+                modes: {
+                    repulse: { distance: 100, duration: 0.4 },
+                    push: { particles_nb: 2 }
+                }
+            },
+            retina_detect: false
+        });
+    }
 });
-
-// Initialize particles.js safely
-if (typeof particlesJS === 'function') {
-    particlesJS("particles-js", {
-        // ... your existing particles config ...
-    });
-}
 
 window.addEventListener('error', function(e) {
     if (e.target.src) {
