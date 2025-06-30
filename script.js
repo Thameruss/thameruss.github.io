@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { text: '<span class="output">Kuwait 🇰🇼</span>', delay: 800 },
         
         { text: '<span class="prompt"># cat certifications.txt</span>', delay: 600 },
-        { text: '<span class="output">eJPT <br>CPTS - In Progress</span>', delay: 1000 },
+        { text: '<span class="output">eJPT <br>CRTA <br>CPTS - In Progress</span>', delay: 1000 },
         
         { text: '<span class="prompt"># Let\'s connect...</span>', delay: 800 },
         
