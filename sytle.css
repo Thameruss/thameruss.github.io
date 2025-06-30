@@ -1081,6 +1081,14 @@ body {
 
 @media (max-width: 768px) {
     .projects-container {
-        grid-template-columns: 1fr;
-    }
+
+
+.cert-earned {
+    color: #00ff88; 
+    font-weight: bold;
 }
+.cert-progress {
+    color: #ffaa00; 
+    font-style: italic;
+}
+
