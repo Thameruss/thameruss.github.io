@@ -14,7 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
         { text: '<span class="output">Kuwait 🇰🇼</span>', delay: 800 },
         
         { text: '<span class="prompt"># cat certifications.txt</span>', delay: 600 },
-{ text: '<span class="output"><span class="cert-earned">eJPT</span><br><span class="cert-earned">CRTA</span><br><span class="cert-progress">CPTS - In Progress</span></span>', delay: 1000 },
+{ 
+  text: '<span class="output"><span class="cert-earned">eJPT</span><br><span class="cert-earned">CRTA</span><br><span class="cert-earned">eCPPT</span><br><span class="cert-progress">CPTS - In Progress</span></span>', 
+  delay: 1000 
+},
         
         { text: '<span class="prompt"># Let\'s connect...</span>', delay: 800 },
         
